@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+}
+/* layout */
+.container{
+    height: 100vh;
+    background: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .blog-card-container{
+    background: hsl(0, 0%, 100%);
+    width: 370px;
+    border: 1px solid hsl(0, 0%, 7%);
+    border-radius: 15px;
+    box-shadow: 8px 8px 0px 0px;
+    padding: 15px;
+}
+.blog-card-container .img-card img{
+    border-radius: 10px;
+}
+.blog-card-container .card-content .card-box-container{
+    padding: 15px 0;
+}
+.card-content .card-box-container .box{
+    background: hsl(47, 88%, 63%);
+    padding: 5px 10px;
+    width: 90px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.card-details .card-details-header h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+.card-details .card-details-body{
+    color: hsl(0, 0%, 42%);
+    margin: 20px 0;
+}
+.card-details .card-details-footer{
+    display: flex;
+    align-items: center;
+}
+.card-details .card-details-footer img{
+    width: 50%;
+}
+.card-details .card-details-footer h3{
+    margin-left: -20px;
+}
+
+/* MEDIA SCREEN */
+@media (max-width: 480px) {
+    *{
+        font-size: 15px;
+    }
+    .container .blog-card-container{
+        width: 300px;
+        padding: 9px;
+    } 
+    .blog-card-container .img-card img{
+        width: 99.9%;
+    }
+    .card-details .card-details-header h1{
+        font-size: 18px;
+        font-weight: 800;
+    }
+}
+@media (max-width: 200px) {
+    *{
+        font-size: 10px;
+    }
+    .container{
+        min-height:250vh;
+    }
+    .container .blog-card-container{
+        width: 140px;
+        padding: 9px;
+        box-shadow: 4px 4px 0px 0px;
+    } 
+    .blog-card-container .img-card img{
+        width: 99.9%;
+    }
+    .card-details .card-details-header h1{
+        font-size: 12px;
+        font-weight: 800;
+    }
+}
